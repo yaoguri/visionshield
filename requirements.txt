@@ -1,13 +1,15 @@
 # Core dependencies
-flask==3.0.0
+flask==3.0.3
 gunicorn==21.2.0
 werkzeug==3.0.3
 pillow==10.1.0
 numpy==1.24.3
 opencv-python-headless==4.8.1.78
+requests==2.31.0
 
 # PDF Generation
 reportlab==4.0.7
+matplotlib==3.8.0
 
 # API utilities
 flask-cors==4.0.0
