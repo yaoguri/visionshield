@@ -30,7 +30,7 @@ class Config:
         # Model download URL from GitHub Releases
         self.MODEL_URL = os.environ.get(
             'MODEL_URL',
-            'YOUR_GITHUB_RELEASE_URL_HERE'  # We'll update this after uploading to GitHub
+            'https://github.com/yaoguri/visionshield/releases/download/model/visionshield_model.pth'  
         )
         
         # Ensure directories exist
