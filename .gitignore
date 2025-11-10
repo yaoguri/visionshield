@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+env/
+venv/
+fresh-env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+.webassets-cache
+
+# Model files
+models/weights/*.pth
+models/weights/*.pt
+models/*.pth
+models/*.pt
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads and outputs
+uploads/*
+!uploads/.gitkeep
+static/outputs/*
+!static/outputs/.gitkeep
+static/uploads/*
+!static/uploads/.gitkeep
+temp/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Logs
+*.log
