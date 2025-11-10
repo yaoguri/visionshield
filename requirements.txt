@@ -1,35 +1,18 @@
 # Core dependencies
-flask==2.3.3
+flask==3.0.0
 gunicorn==21.2.0
-werkzeug==2.3.7
-pillow==10.0.1
-numpy==1.25.2
-opencv-python==4.8.0.76
+werkzeug==3.0.1
+pillow==10.1.0
+numpy==1.24.3
+opencv-python-headless==4.8.1.78
 
-# PyTorch - Default CPU version
-# If you need CUDA support, comment these lines and uncomment the appropriate CUDA section below
-torch==2.0.1
-torchvision==0.15.2
-
-# For CUDA support, comment the CPU version above and uncomment ONE of these sections:
-
-# PyTorch with CUDA 11.8
-# pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --index-url https://download.pytorch.org/whl/cu118
-
-# PyTorch with CUDA 12.1 (using 2.2.2 as 2.0.1 isn't available with CUDA 12.1)
-# pip install torch==2.2.2+cu121 torchvision==0.17.2+cu121 --index-url https://download.pytorch.org/whl/cu121
-
-# API utilities
-flask-cors==4.0.0
-flask-jwt-extended==4.5.3
-
-# File processing
-python-magic==0.4.27
-
-# Development utilities
-pytest==7.4.2
-black==23.9.1
+# PyTorch - CPU-only for deployment (saves ~2GB)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
 
 # PDF Generation
 reportlab==4.0.7
-matplotlib==3.8.2
+
+# API utilities (if needed)
+flask-cors==4.0.0
