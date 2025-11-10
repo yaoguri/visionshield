@@ -6,12 +6,12 @@ pillow==10.1.0
 numpy==1.24.3
 opencv-python-headless==4.8.1.78
 
-# PyTorch CPU-only - Direct URLs to ensure CPU version
-torch==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
-torchvision==0.16.0+cpu --index-url https://download.pytorch.org/whl/cpu
-
 # PDF Generation
 reportlab==4.0.7
 
 # API utilities
 flask-cors==4.0.0
+
+# PyTorch CPU-only - Direct wheel URLs for Python 3.10
+https://download.pytorch.org/whl/cpu/torch-2.1.0%2Bcpu-cp310-cp310-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.16.0%2Bcpu-cp310-cp310-linux_x86_64.whl
